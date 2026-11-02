@@ -126,7 +126,7 @@ var posts=[
 {t:"Ordena tu horario, ordena tu vida",d:"Dormir y levantarte a la misma hora es el hábito que lo cambia todo."}
 ];
 document.getElementById('posts').innerHTML=posts.map(function(p){return '<div class="card"><div class="tag">Próximamente</div><h3 class="gt" style="font-size:16px">'+p.t+'</h3><p>'+p.d+'</p></div>'}).join('');
-var ENDPOINT="";
+var ENDPOINT="https://formspree.io/f/xljjoedz";
 document.getElementById('go').onclick=function(){
 var m=document.getElementById('msg'),f={};
 ['pais','estado','idioma','edad','sexo','email'].forEach(function(k){f[k]=document.getElementById(k).value.trim()});
